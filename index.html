@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        earth: {
+                            50: '#F9F7F4',
+                            100: '#F3EFE8',
+                            200: '#E8DED0',
+                            300: '#D4C4AD',
+                            400: '#B8A188',
+                            500: '#9B7E63',
+                            600: '#7D6550',
+                            700: '#5F4D3D',
+                            800: '#42362A',
+                            900: '#2A221A'
+                        },
+                        sage: {
+                            50: '#F5F7F5',
+                            100: '#E8EDE8',
+                            200: '#D1DBD1',
+                            300: '#B4C4B4',
+                            400: '#8FA18F',
+                            500: '#6B7D6B',
+                            600: '#556555',
+                            700: '#404D40',
+                            800: '#2C362C',
+                            900: '#1A211A'
+                        },
+                        cream: '#FAF8F5',
+                        terracotta: '#C67B5C'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        html { scroll-behavior: smooth; }
+        body { overflow-x: hidden; }
+    </style>
+</head>
+<body class="bg-cream text-earth-900 font-sans">
+
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav class="container mx-auto px-4 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-sage-500 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-leaf text-white text-lg"></i>
+                </div>
+                <span class="font-serif text-2xl font-bold text-earth-800">Dana Landgren</span>
+            </div>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Home</a>
+                <a href="#about" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">About</a>
+                <a href="#products" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Products</a>
+                <a href="#benefits" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Benefits</a>
+                <a href="#testimonials" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Testimonials</a>
+                <a href="#blog" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Blog</a>
+                <a href="#contact" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Contact</a>
+                <a href="#shop" class="bg-sage-600 text-white px-6 py-2.5 rounded-full hover:bg-sage-700 transition-colors font-medium">Shop Now</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-earth-800 text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden pb-6">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Home</a>
+                <a href="#about" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">About</a>
+                <a href="#products" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Products</a>
+                <a href="#benefits" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Benefits</a>
+                <a href="#testimonials" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Testimonials</a>
+                <a href="#blog" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Blog</a>
+                <a href="#contact" class="text-earth-700 hover:text-sage-600 transition-colors font-medium">Contact</a>
+                <a href="#shop" class="bg-sage-600 text-white px-6 py-2.5 rounded-full hover:bg-sage-700 transition-colors font-medium text-center">Shop Now</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="home" class="pt-20">
+    <section id="hero-section" class="relative bg-gradient-to-br from-sage-50 to-earth-50 h-[700px] lg:h-[800px] flex items-center overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 lg:space-y-8">
+                    <div class="inline-block bg-sage-100 text-sage-700 px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fa-solid fa-sparkles mr-2"></i>New Product Launch
+                    </div>
+                    <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-earth-900 leading-tight">
+                        Natural Wellness<br/>for Every Woman
+                    </h1>
+                    <p class="text-lg lg:text-xl text-earth-700 leading-relaxed max-w-xl">
+                        Discover our premium line of women's health vitamins, crafted with nature's finest ingredients to support your journey to optimal wellness.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="bg-sage-600 text-white px-8 py-4 rounded-full hover:bg-sage-700 transition-all shadow-lg hover:shadow-xl font-medium text-center">
+                            Explore Products
+                        </a>
+                        <a href="#about" class="bg-white text-earth-800 px-8 py-4 rounded-full hover:bg-earth-50 transition-all border-2 border-earth-200 font-medium text-center">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-8 pt-4">
+                        <div class="text-center">
+                            <div class="font-serif text-3xl font-bold text-sage-600">100%</div>
+                            <div class="text-sm text-earth-600">Natural</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-serif text-3xl font-bold text-sage-600">15K+</div>
+                            <div class="text-sm text-earth-600">Happy Women</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-serif text-3xl font-bold text-sage-600">4.9★</div>
+                            <div class="text-sm text-earth-600">Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <div class="absolute inset-0 bg-sage-200 rounded-full blur-3xl opacity-30"></div>
+                    <div class="relative h-[600px] overflow-hidden rounded-3xl">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b7323e49eb-f18c76a36d53c543d2c4.png" alt="Elegant woman holding natural vitamin supplement bottle, surrounded by fresh botanical leaves and herbs, wellness lifestyle photography, soft natural lighting, earthy tones" />
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-terracotta rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-earth-900">Certified Organic</div>
+                                <div class="text-sm text-earth-600">Third-party tested</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trust-badges" class="py-12 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="text-center space-y-2">
+                    <i class="fa-solid fa-leaf text-4xl text-sage-500"></i>
+                    <div class="font-semibold text-earth-800">100% Organic</div>
+                    <div class="text-sm text-earth-600">Certified ingredients</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <i class="fa-solid fa-flask text-4xl text-sage-500"></i>
+                    <div class="font-semibold text-earth-800">Lab Tested</div>
+                    <div class="text-sm text-earth-600">Quality assured</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <i class="fa-solid fa-heart text-4xl text-terracotta"></i>
+                    <div class="font-semibold text-earth-800">Made with Love</div>
+                    <div class="text-sm text-earth-600">Care in every bottle</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <i class="fa-solid fa-truck-fast text-4xl text-sage-500"></i>
+                    <div class="font-semibold text-earth-800">Free Shipping</div>
+                    <div class="text-sm text-earth-600">On orders over $50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 lg:py-32 bg-gradient-to-b from-cream to-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="relative order-2 lg:order-1">
+                    <div class="h-[400px] lg:h-[600px] overflow-hidden rounded-3xl">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/608659a62d-43cd933811cfde6d5e8b.png" alt="Natural wellness ingredients, botanical herbs, vitamins in glass jars, organic supplements on wooden table, earthy aesthetic, soft natural light" />
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-sage-500 rounded-full opacity-20"></div>
+                    <div class="absolute -bottom-8 -left-8 w-40 h-40 bg-terracotta rounded-full opacity-20"></div>
+                </div>
+                <div class="space-y-6 order-1 lg:order-2">
+                    <div class="inline-block bg-sage-100 text-sage-700 px-4 py-2 rounded-full text-sm font-medium">
+                        About Dana Landgren
+                    </div>
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-earth-900 leading-tight">
+                        Empowering Women Through Natural Wellness
+                    </h2>
+                    <p class="text-lg text-earth-700 leading-relaxed">
+                        For over a decade, I've dedicated my life to understanding women's health and the transformative power of natural nutrition. My journey began with a simple belief: every woman deserves access to pure, effective supplements that support her unique wellness needs.
+                    </p>
+                    <p class="text-lg text-earth-700 leading-relaxed">
+                        Our vitamins are carefully formulated using only the highest quality organic ingredients, sourced from trusted farms around the world. Each product is third-party tested to ensure purity, potency, and effectiveness.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6 pt-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-seedling text-sage-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-earth-900 mb-1">Sustainably Sourced</div>
+                                <div class="text-sm text-earth-600">From ethical farms worldwide</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-award text-sage-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-earth-900 mb-1">Expert Formulated</div>
+                                <div class="text-sm text-earth-600">By nutritional scientists</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-block bg-sage-600 text-white px-8 py-4 rounded-full hover:bg-sage-700 transition-all shadow-lg hover:shadow-xl font-medium">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-sage-100 text-sage-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Our Products
+                </div>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-earth-900 mb-6">
+                    Premium Women's Wellness Collection
+                </h2>
+                <p class="text-lg text-earth-700">
+                    Thoughtfully crafted formulas to support every stage of your wellness journey
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="product-card-1" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-64 mb-6 overflow-hidden rounded-2xl bg-white">
+                        <img class="w-full h-full object-contain p-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/42b631d891-24a421601197644f8f8d.png" alt="Premium vitamin supplement bottle with botanical leaf design, women" />
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-sage-600 text-white px-3 py-1 rounded-full text-xs font-medium">BESTSELLER</span>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900">Daily Essentials</h3>
+                        <p class="text-earth-700">Complete multivitamin formula designed for women's daily nutritional needs with bioavailable ingredients.</p>
+                        <div class="flex items-center gap-2 text-sm text-earth-600">
+                            <i class="fa-solid fa-circle-check text-sage-600"></i>
+                            <span>60 capsules • 30-day supply</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4">
+                            <div>
+                                <div class="font-serif text-3xl font-bold text-earth-900">$49</div>
+                                <div class="text-sm text-earth-600">One-time purchase</div>
+                            </div>
+                            <button class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all group-hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus mr-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-card-2" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-64 mb-6 overflow-hidden rounded-2xl bg-white">
+                        <img class="w-full h-full object-contain p-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f09327321a-cfeee09de13fe1885ed9.png" alt="Natural hormone balance supplement bottle with floral botanical design, women" />
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-terracotta text-white px-3 py-1 rounded-full text-xs font-medium">NEW</span>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900">Hormone Harmony</h3>
+                        <p class="text-earth-700">Natural support for hormonal balance with adaptogenic herbs and essential nutrients for every life stage.</p>
+                        <div class="flex items-center gap-2 text-sm text-earth-600">
+                            <i class="fa-solid fa-circle-check text-sage-600"></i>
+                            <span>90 capsules • 30-day supply</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4">
+                            <div>
+                                <div class="font-serif text-3xl font-bold text-earth-900">$59</div>
+                                <div class="text-sm text-earth-600">One-time purchase</div>
+                            </div>
+                            <button class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all group-hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus mr-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-card-3" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-64 mb-6 overflow-hidden rounded-2xl bg-white">
+                        <img class="w-full h-full object-contain p-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a8c8fdfbbd-79a8504872ab248222d8.png" alt="Prenatal vitamin supplement bottle with nurturing botanical design, pregnancy wellness vitamins, elegant product photography, white background" />
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full text-xs font-medium">ESSENTIAL</span>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star-half-stroke text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900">Prenatal Plus</h3>
+                        <p class="text-earth-700">Comprehensive prenatal support with folate, iron, and DHA for mother and baby's optimal health.</p>
+                        <div class="flex items-center gap-2 text-sm text-earth-600">
+                            <i class="fa-solid fa-circle-check text-sage-600"></i>
+                            <span>90 capsules • 30-day supply</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4">
+                            <div>
+                                <div class="font-serif text-3xl font-bold text-earth-900">$69</div>
+                                <div class="text-sm text-earth-600">One-time purchase</div>
+                            </div>
+                            <button class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all group-hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus mr-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-card-4" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-64 mb-6 overflow-hidden rounded-2xl bg-white">
+                        <img class="w-full h-full object-contain p-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d63541bd23-8261dd09baf8cc12808e.png" alt="Beauty supplement bottle with radiant botanical design, collagen and biotin vitamins, elegant product photography, white background" />
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full text-xs font-medium">POPULAR</span>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900">Radiant Beauty</h3>
+                        <p class="text-earth-700">Nourish your skin, hair, and nails from within with biotin, collagen, and antioxidant-rich botanicals.</p>
+                        <div class="flex items-center gap-2 text-sm text-earth-600">
+                            <i class="fa-solid fa-circle-check text-sage-600"></i>
+                            <span>60 capsules • 30-day supply</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4">
+                            <div>
+                                <div class="font-serif text-3xl font-bold text-earth-900">$54</div>
+                                <div class="text-sm text-earth-600">One-time purchase</div>
+                            </div>
+                            <button class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all group-hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus mr-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-card-5" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-64 mb-6 overflow-hidden rounded-2xl bg-white">
+                        <img class="w-full h-full object-contain p-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2bcba2dfd0-3037f8a37e2532bcca31.png" alt="Energy boost supplement bottle with vibrant botanical design, B-complex vitamins, elegant product photography, white background" />
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full text-xs font-medium">ENERGIZE</span>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star-half-stroke text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900">Vital Energy</h3>
+                        <p class="text-earth-700">Combat fatigue naturally with B-complex vitamins, iron, and adaptogenic herbs for sustained energy.</p>
+                        <div class="flex items-center gap-2 text-sm text-earth-600">
+                            <i class="fa-solid fa-circle-check text-sage-600"></i>
+                            <span>60 capsules • 30-day supply</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4">
+                            <div>
+                                <div class="font-serif text-3xl font-bold text-earth-900">$44</div>
+                                <div class="text-sm text-earth-600">One-time purchase</div>
+                            </div>
+                            <button class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all group-hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus mr-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-card-6" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="h-64 mb-6 overflow-hidden rounded-2xl bg-white">
+                        <img class="w-full h-full object-contain p-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/03b928feef-7e7eb383156a32971c2f.png" alt="Sleep support supplement bottle with calming botanical design, melatonin and magnesium, elegant product photography, white background" />
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-sage-100 text-sage-700 px-3 py-1 rounded-full text-xs font-medium">RELAX</span>
+                            <div class="flex items-center gap-1 text-amber-500">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900">Restful Sleep</h3>
+                        <p class="text-earth-700">Gentle sleep support with magnesium, L-theanine, and calming botanicals for restorative rest.</p>
+                        <div class="flex items-center gap-2 text-sm text-earth-600">
+                            <i class="fa-solid fa-circle-check text-sage-600"></i>
+                            <span>60 capsules • 30-day supply</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4">
+                            <div>
+                                <div class="font-serif text-3xl font-bold text-earth-900">$39</div>
+                                <div class="text-sm text-earth-600">One-time purchase</div>
+                            </div>
+                            <button class="bg-sage-600 text-white px-6 py-3 rounded-full hover:bg-sage-700 transition-all group-hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus mr-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#shop" class="inline-block bg-earth-800 text-white px-10 py-4 rounded-full hover:bg-earth-900 transition-all shadow-lg hover:shadow-xl font-medium">
+                    View All Products <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-20 lg:py-32 bg-gradient-to-br from-sage-500 to-sage-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Why Choose Us
+                </div>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                    The Dana Landgren Difference
+                </h2>
+                <p class="text-lg text-white/90">
+                    Experience the transformative power of nature-backed science
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="benefit-card-1" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-microscope text-3xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">Science-Backed Formulas</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Every ingredient is carefully selected based on extensive research and clinical studies to ensure maximum efficacy and safety.
+                    </p>
+                </div>
+
+                <div id="benefit-card-2" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-shield-halved text-3xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">Third-Party Tested</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Independent laboratory testing guarantees purity, potency, and the absence of harmful contaminants in every batch.
+                    </p>
+                </div>
+
+                <div id="benefit-card-3" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-leaf text-3xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">100% Natural Ingredients</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        We source only the finest organic, non-GMO ingredients from sustainable farms committed to environmental stewardship.
+                    </p>
+                </div>
+
+                <div id="benefit-card-4" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-heart-pulse text-3xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">Holistic Approach</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Our formulas address the interconnected aspects of women's health, supporting body, mind, and spirit in harmony.
+                    </p>
+                </div>
+
+                <div id="benefit-card-5" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">Expert Support</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Our team of nutritionists and wellness coaches is always available to guide you on your health journey.
+                    </p>
+                </div>
+
+                <div id="benefit-card-6" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-recycle text-3xl text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-4">Eco-Friendly Packaging</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Sustainable, recyclable packaging made from post-consumer materials reflects our commitment to the planet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 lg:py-32 bg-cream">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-sage-100 text-sage-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Customer Stories
+                </div>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-earth-900 mb-6">
+                    Transforming Lives, One Woman at a Time
+                </h2>
+                <p class="text-lg text-earth-700">
+                    Real stories from real women who've experienced the difference
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="testimonial-card-1" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-earth-700 leading-relaxed mb-6 italic">
+                        "After struggling with hormonal imbalances for years, Hormone Harmony has been a game-changer. I feel more balanced, energized, and like myself again. Thank you, Dana!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/single-women-happier-than-men-675ac891b545d.jpg?crop=0.670xw:1.00xh;0.247xw,0&resize=640:*" alt="Sarah" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-earth-900">Sarah Mitchell</div>
+                            <div class="text-sm text-earth-600">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonial-card-2" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-earth-700 leading-relaxed mb-6 italic">
+                        "As a busy mom, I needed something to keep up with my energy levels. Vital Energy has made such a difference in my daily life. I actually have energy to play with my kids now!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1594745561149-2211ca8c5d98?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-earth-900">Jennifer Torres</div>
+                            <div class="text-sm text-earth-600">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonial-card-3" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-earth-700 leading-relaxed mb-6 italic">
+                        "The Radiant Beauty formula has transformed my skin and hair. People keep asking what I'm doing differently. I love that it's all natural and actually works!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1763956391204-1df1058f0fa8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhbmRzJTIwb24lMjBmYWNlfGVufDB8fDB8fHww" alt="Emily" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-earth-900">Emily Chen</div>
+                            <div class="text-sm text-earth-600">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="testimonial-card-4" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-earth-700 leading-relaxed mb-6 italic">
+                        "During my pregnancy, Prenatal Plus gave me peace of mind knowing I was getting the best nutrition for my baby. My doctor was impressed with my vitamin levels!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg" alt="Rachel" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-earth-900">Rachel Anderson</div>
+                            <div class="text-sm text-earth-600">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonial-card-5" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-earth-700 leading-relaxed mb-6 italic">
+                        "I've tried many supplements over the years, but Dana's Daily Essentials is the only one I've stuck with. I can actually feel the difference in my overall wellness."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Lisa" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-earth-900">Lisa Patterson</div>
+                            <div class="text-sm text-earth-600">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonial-card-6" class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-center gap-1 text-amber-500 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-earth-700 leading-relaxed mb-6 italic">
+                        "Restful Sleep has been a lifesaver. As someone who struggled with insomnia for years, I finally wake up feeling refreshed. No grogginess, just natural, restful sleep."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Amanda" class="w-14 h-14 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-earth-900">Amanda Brooks</div>
+                            <div class="text-sm text-earth-600">Verified Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="text-center mt-12">
+                <div class="inline-flex items-center gap-3 bg-white px-8 py-4 rounded-full shadow-lg">
+                    <div class="flex -space-x-2">
+                        <img src="https://images.unsplash.com/photo-1763956391204-1df1058f0fa8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhbmRzJTIwb24lMjBmYWNlfGVufDB8fDB8fHww" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                        <img src="https://images.unsplash.com/photo-1763956391204-1df1058f0fa8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhbmRzJTIwb24lMjBmYWNlfGVufDB8fDB8fHww" alt="Customer" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                        <img src="https://images.unsplash.com/photo-1594745561149-2211ca8c5d98?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                        <img src="https://images.unsplash.com/photo-1763956391204-1df1058f0fa8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhhbmRzJTIwb24lMjBmYWNlfGVufDB8fDB8fHww" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+                    </div>
+                    <div class="text-left">
+                        <div class="font-semibold text-earth-900">15,000+ Happy Customers</div>
+                        <div class="text-sm text-earth-600">Join our wellness community</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-20 lg:py-32 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-sage-100 text-sage-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Wellness Journal
+                </div>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-earth-900 mb-6">
+                    Educational Resources & Insights
+                </h2>
+                <p class="text-lg text-earth-700">
+                    Empowering you with knowledge for your wellness journey
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article id="blog-card-1" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6554ef8c53-f7a8caf3edd696d184e0.png" alt="Woman doing yoga outdoors in nature, morning wellness routine, peaceful meditation, natural sunlight, earthy tones" />
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-earth-600">
+                            <span class="bg-sage-600 text-white px-3 py-1 rounded-full text-xs font-medium">WELLNESS</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900 group-hover:text-sage-600 transition-colors">
+                            5 Morning Rituals for Hormonal Balance
+                        </h3>
+                        <p class="text-earth-700 leading-relaxed">
+                            Discover simple, science-backed morning practices that can help regulate your hormones naturally and set the tone for a balanced day.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sage-600 font-medium group-hover:gap-4 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="blog-card-2" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ffcddbc434-538e52b9c37957f98753.png" alt="Healthy colorful smoothie bowl with fresh fruits and superfoods, nutritious breakfast, wellness food photography, natural lighting" />
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-earth-600">
+                            <span class="bg-terracotta text-white px-3 py-1 rounded-full text-xs font-medium">NUTRITION</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900 group-hover:text-sage-600 transition-colors">
+                            The Complete Guide to Prenatal Nutrition
+                        </h3>
+                        <p class="text-earth-700 leading-relaxed">
+                            Everything you need to know about nourishing your body during pregnancy, from essential nutrients to meal planning tips.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sage-600 font-medium group-hover:gap-4 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="blog-card-3" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/af219d33c8-44e9b87c9140e3262529.png" alt="Woman sleeping peacefully in bed with natural bedding, restful sleep, calm bedroom environment, soft morning light" />
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-earth-600">
+                            <span class="bg-sage-600 text-white px-3 py-1 rounded-full text-xs font-medium">SLEEP</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900 group-hover:text-sage-600 transition-colors">
+                            Natural Solutions for Better Sleep Quality
+                        </h3>
+                        <p class="text-earth-700 leading-relaxed">
+                            Learn how to optimize your sleep naturally with evidence-based strategies and supportive nutrients for restorative rest.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sage-600 font-medium group-hover:gap-4 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="blog-card-4" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6301b5b07c-aa7976118f9ab3c2de93.png" alt="Woman examining skincare products with natural ingredients, beauty wellness routine, glowing skin, natural light photography" />
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-earth-600">
+                            <span class="bg-terracotta text-white px-3 py-1 rounded-full text-xs font-medium">BEAUTY</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900 group-hover:text-sage-600 transition-colors">
+                            Beauty from Within: Nutrients for Radiant Skin
+                        </h3>
+                        <p class="text-earth-700 leading-relaxed">
+                            Explore the connection between nutrition and skin health, and discover which vitamins can help you achieve that natural glow.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sage-600 font-medium group-hover:gap-4 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="blog-card-5" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d19ad88860-df961b084bc07cd59530.png" alt="Woman exercising outdoors, fitness wellness, active lifestyle, natural environment, healthy living photography" />
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-earth-600">
+                            <span class="bg-sage-600 text-white px-3 py-1 rounded-full text-xs font-medium">FITNESS</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900 group-hover:text-sage-600 transition-colors">
+                            Energize Your Workouts Naturally
+                        </h3>
+                        <p class="text-earth-700 leading-relaxed">
+                            Discover natural ways to boost your energy and enhance your exercise performance without relying on artificial stimulants.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sage-600 font-medium group-hover:gap-4 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="blog-card-6" class="bg-gradient-to-br from-sage-50 to-earth-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/380cb8f8c1-f672edde1eb50aca4fa5.png" alt="Woman meditating in peaceful natural setting, mindfulness practice, mental wellness, serene atmosphere, earthy tones" />
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-earth-600">
+                            <span class="bg-terracotta text-white px-3 py-1 rounded-full text-xs font-medium">MINDFULNESS</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-earth-900 group-hover:text-sage-600 transition-colors">
+                            Stress Management for Busy Women
+                        </h3>
+                        <p class="text-earth-700 leading-relaxed">
+                            Practical stress-reduction techniques and nutritional support to help you maintain calm and clarity in your daily life.
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-2 text-sage-600 font-medium group-hover:gap-4 transition-all">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-earth-800 text-white px-10 py-4 rounded-full hover:bg-earth-900 transition-all shadow-lg hover:shadow-xl font-medium">
+                    Visit Our Blog <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-subscription" class="py-20 lg:py-32 bg-gradient-to-br from-earth-800 to-earth-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-sage-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-terracotta rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <div class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
+                    Subscribe & Save
+                </div>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold">
+                    Join Our Wellness Community
+                </h2>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto">
+                    Get exclusive access to wellness tips, special offers, and be the first to know about new product launches. Plus, save 20% on your first order!
+                </p>
+                <div class="max-w-xl mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 rounded-full text-earth-900 focus:outline-none focus:ring-4 focus:ring-sage-400">
+                        <button class="bg-sage-600 text-white px-8 py-4 rounded-full hover:bg-sage-700 transition-all shadow-lg hover:shadow-xl font-medium whitespace-nowrap">
+                            Subscribe Now
+                        </button>
+                    </div>
+                    <p class="text-sm text-white/70 mt-4">
+                        <i class="fa-solid fa-lock mr-1"></i>
+                        Your privacy is important to us. We'll never share your email.
+                    </p>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-8 pt-8 max-w-2xl mx-auto">
+                    <div class="space-y-2">
+                        <div class="text-4xl font-serif font-bold">20%</div>
+                        <div class="text-white/80">First Order Discount</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-4xl font-serif font-bold">Free</div>
+                        <div class="text-white/80">Wellness Guide</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-4xl font-serif font-bold">24/7</div>
+                        <div class="text-white/80">Expert Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 lg:py-32 bg-cream">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <div class="inline-block bg-sage-100 text-sage-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                            Get in Touch
+                        </div>
+                        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-earth-900 mb-6">
+                            We're Here to Support Your Wellness Journey
+                        </h2>
+                        <p class="text-lg text-earth-700 leading-relaxed">
+                            Have questions about our products or need personalized recommendations? Our wellness experts are ready to help you find the perfect solution for your health goals.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-sage-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-earth-900 mb-1">Email Us</div>
+                                <a href="mailto:hello@danalandgren.com" class="text-sage-600 hover:text-sage-700">hello@danalandgren.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-sage-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-earth-900 mb-1">Call Us</div>
+                                <a href="tel:+18005551234" class="text-sage-600 hover:text-sage-700">1-800-555-1234</a>
+                                <div class="text-sm text-earth-600">Mon-Fri, 9am-6pm EST</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-sage-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-earth-900 mb-1">Visit Us</div>
+                                <div class="text-earth-700">123 Wellness Way<br>Natural Health Plaza<br>Portland, OR 97201</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <div class="font-semibold text-earth-900 mb-4">Follow Our Journey</div>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-12 h-12 bg-sage-600 rounded-full flex items-center justify-center text-white hover:bg-sage-700 transition-colors">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-sage-600 rounded-full flex items-center justify-center text-white hover:bg-sage-700 transition-colors">
+                                <i class="fa-brands fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-sage-600 rounded-full flex items-center justify-center text-white hover:bg-sage-700 transition-colors">
+                                <i class="fa-brands fa-pinterest text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-sage-600 rounded-full flex items-center justify-center text-white hover:bg-sage-700 transition-colors">
+                                <i class="fa-brands fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl">
+                    <h3 class="font-serif text-2xl font-bold text-earth-900 mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-earth-800 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-full border-2 border-earth-200 focus:border-sage-500 focus:outline-none transition-colors" placeholder="Jane">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-earth-800 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-full border-2 border-earth-200 focus:border-sage-500 focus:outline-none transition-colors" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-earth-800 mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-full border-2 border-earth-200 focus:border-sage-500 focus:outline-none transition-colors" placeholder="jane@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-earth-800 mb-2">Phone Number (Optional)</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-full border-2 border-earth-200 focus:border-sage-500 focus:outline-none transition-colors" placeholder="(555) 123-4567">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-earth-800 mb-2">How can we help you?</label>
+                            <select class="w-full px-4 py-3 rounded-full border-2 border-earth-200 focus:border-sage-500 focus:outline-none transition-colors">
+                                <option>Product Inquiry</option>
+                                <option>Order Support</option>
+                                <option>Wellness Consultation</option>
+                                <option>Partnership Opportunity</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-earth-800 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-2xl border-2 border-earth-200 focus:border-sage-500 focus:outline-none transition-colors resize-none" placeholder="Tell us more about your wellness goals..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sage-600 text-white px-8 py-4 rounded-full hover:bg-sage-700 transition-all shadow-lg hover:shadow-xl font-medium">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" class="bg-earth-900 text-white pt-20 pb-8">
+    <div class="container mx-auto px-4 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-6">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-sage-500 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-leaf text-white text-lg"></i>
+                    </div>
+                    <span class="font-serif text-2xl font-bold">Dana Landgren</span>
+                </div>
+                <p class="text-white/70 leading-relaxed">
+                    Empowering women through natural wellness solutions. Premium vitamins crafted with care for your optimal health.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-sage-600 transition-colors">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-lg font-bold mb-6">Shop</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">All Products</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Daily Essentials</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Hormone Support</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Prenatal Care</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Beauty & Wellness</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Subscription Plans</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-lg font-bold mb-6">Company</h4>
+                <ul class="space-y-3">
+                    <li><a href="#about" class="text-white/70 hover:text-sage-400 transition-colors">About Us</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Our Story</a></li>
+                    <li><a href="#blog" class="text-white/70 hover:text-sage-400 transition-colors">Wellness Blog</a></li>
+                    <li><a href="#testimonials" class="text-white/70 hover:text-sage-400 transition-colors">Customer Reviews</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Sustainability</a></li>
+                    <li><a href="#contact" class="text-white/70 hover:text-sage-400 transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-lg font-bold mb-6">Support</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">FAQ</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Shipping & Returns</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Track Your Order</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Wellness Consultation</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-sage-400 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-white/60 text-sm">
+                    © 2026 Dana Landgren Wellness. All rights reserved.
+                </p>
+                <div class="flex items-center gap-6">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25' viewBox='0 0 40 25'%3E%3Crect fill='%23fff' opacity='0.3' width='40' height='25' rx='3'/%3E%3C/svg%3E" alt="Payment" class="h-6">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25' viewBox='0 0 40 25'%3E%3Crect fill='%23fff' opacity='0.3' width='40' height='25' rx='3'/%3E%3C/svg%3E" alt="Payment" class="h-6">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='25' viewBox='0 0 40 25'%3E%3Crect fill='%23fff' opacity='0.3' width='40' height='25' rx='3'/%3E%3C/svg%3E" alt="Payment" class="h-6">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+    });
+
+    let lastScroll = 0;
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.transform = 'translateY(0)';
+        }
+        lastScroll = currentScroll;
+    });
+    header.style.transition = 'transform 0.3s ease-in-out';
+</script>
+
+</body>
+</html>
